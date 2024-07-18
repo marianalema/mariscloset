@@ -1,0 +1,35 @@
+body {
+    background-color: #F5DEFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.closet {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    width: 150px;
+    cursor: pointer;
+    width: 100%;
+}

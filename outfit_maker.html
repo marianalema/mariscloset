@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Design an Outfit</title>
+    <link rel="stylesheet" href="styles_outfit_maker.css">
+</head>
+<body>
+    <div class="container">
+        <img src="let's_design.png" alt="Let's design an outfit" class="title-img">
+        <form id="outfitForm">
+            <div class="dropdown-container">
+                <img src="temperature.png" alt="What's the temperature like today?" class="subtitle-img">
+                <br>
+                <select id="temperature" name="temperature">
+                    <option value="hot">Hot</option>
+                    <option value="average">Average</option>
+                    <option value="cold">Cold</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <img src="event.png" alt="What's the event?" class="subtitle-img">
+                <br>
+                <select id="event" name="event">
+                    <option value="class">Class</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="going_out">Going Out</option>
+                    <option value="pool_party">Pool Party</option>
+                </select>
+            </div>
+            <button type="submit" class="button-img">
+                <img src="build_outfit.png" alt="build outfit">
+            </button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('outfitForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const temperature = document.getElementById('temperature').value;
+            const eventType = document.getElementById('event').value;
+
+            localStorage.setItem('temperature', temperature);
+            localStorage.setItem('event', eventType);
+
+            window.location.href = 'build_outfit.html';
+        });
+    </script>
+</body>
+</html>

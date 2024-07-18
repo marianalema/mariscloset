@@ -1,0 +1,48 @@
+body {
+    background-color: #F5DEFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: #781394;
+}
+
+.title-img {
+    width: 70%; /* Aumente a largura da imagem do título */
+    margin-bottom: 20px;
+}
+
+.subtitle-img {
+    width: 60%; /* Aumente a largura das imagens dos subtítulos */
+    margin-bottom: 10px;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #781394;
+    border-radius: 5px;
+    margin-top: 10px; /* Espaço entre a imagem e o dropdown */
+}
+
+.button-img {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-img img {
+    width: 150px; /* Aumente a largura do botão */
+}
